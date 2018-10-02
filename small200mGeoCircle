@@ -3,3 +3,7 @@
   object ZeroComplexityMyFunctions {
     def circle200m(l: LatLong) : GeoCircle = GeoCircle(l,0.2)
   }
+  
+  object ZeroComplexityMyFunctions {
+    def circle300m(l: LatLong) : GeoCircle = GeoCircle(l,0.3)
+  }
