@@ -7,9 +7,4 @@ import com.sparkbeyond.runtime.feature.types._
     def circle200m(l: LatLong) : GeoCircle = GeoCircle(l,0.2)
     def circle300m(l: LatLong) : GeoCircle = GeoCircle(l,0.3)
     
-    def attributesInPolygon(p: Polygon) = {
-      val foo=OsmImplementation.getImpl().pointsIn(p)
-      val h = new Histogram(foo.flatMap(_._2.grouped(2).map{case Array(k,v) => k.toString->v.toString}))
-      h
-    }
   }
